@@ -3,7 +3,6 @@
 */ 
 
 import React, { Component } from 'react';
-import { Redirect } from 'react-router'
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
