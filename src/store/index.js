@@ -4,7 +4,7 @@
 
 import {combineReducers, createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk'; // 使用 redux-thunk 来处理中间件
-import rootReducer from '../reducers';
+import rootReducer from '@/reducers';
 
 let composedReduer = combineReducers(rootReducer);
 let store = applyMiddleware(thunk)(createStore)(composedReduer);

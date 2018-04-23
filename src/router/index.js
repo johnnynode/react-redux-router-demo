@@ -6,8 +6,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import {connect} from 'react-redux';
 
-import HomePage from '../pages/home';
-import NotFoundPage from '../pages/notFound';
+import HomePage from '@/pages/home';
+import NotFoundPage from '@/pages/notFound';
 
 // 各部分模块在此汇总
 export default class AppRouter extends Component {
