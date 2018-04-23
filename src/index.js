@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'; // 通过 react-redux 来实现store和ui组件的连接
-import {BrowserRouter as Router} from 'react-router-dom'; // 路由模块
-import registerServiceWorker from './Services/registerServiceWorker';
-import App from './Components/App';
-import Store from './Store';
+import registerServiceWorker from './services/registerServiceWorker';
+import AppRouter from './router';
+import Store from './store';
+import './assets/styles/base.css';
 
 ReactDOM.render(
   <Provider store={Store}>
-    <Router>
-      <App />
-    </Router>
+    <AppRouter />
   </Provider>,
   document.getElementById('root')
 );
