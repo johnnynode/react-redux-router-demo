@@ -1,10 +1,9 @@
 /*!
- * List Container
+ * Detail Container
 */
-
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import List from './list';
+import Detail from './detail';
 import Action from './action';
 
 class Container extends Component {
@@ -12,12 +11,12 @@ class Container extends Component {
 		console.log(this.props);
 		return (
 			<div>
-				<List />
+				<Detail />
 			</div>
 		);
 	}
 	componentDidMount() {
-	  	console.log("Here is List page！");
+	  	console.log("Here is Detail page！");
 	}
 }
 

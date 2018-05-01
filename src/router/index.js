@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import NavBar from '@/components/navBar';
 import HomePage from '@/pages/home';
 import ListPage from '@/pages/list';
+import DetailPage from '@/pages/detail';
 
 import NotFoundPage from '@/pages/notFound';
 
@@ -22,6 +23,7 @@ export default class AppRouter extends Component {
           <Switch>
             <Route exact path="/" component={HomePage}/>
             <Route exact path="/list" component={ListPage}/>
+            <Route exact path="/detail" component={DetailPage}/>
             <Route path="/404" component={NotFoundPage} />
             <Route render={() => <Redirect to="/404" />} />
           </Switch> 
