@@ -4,12 +4,24 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import Home from './home';
+import Action from './action';
 
 class Container extends Component {
 	render() {
+    // 从props中取出属性
+		const {
+			clickTest
+		} = this.props;
+
 		return (
 			<div>
-				<Home />
+				<Home 
+          clickTest={
+            () => {
+              clickTest();
+            }
+          }
+        />
 			</div>
 		);
 	}
@@ -19,5 +31,7 @@ class Container extends Component {
 }
 
 export default connect(
-  null, null
+  null, {
+    clickTest: Action.clickTest
+  }
 )(Container);

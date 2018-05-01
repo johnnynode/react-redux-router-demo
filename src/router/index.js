@@ -4,7 +4,6 @@
 
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import {connect} from 'react-redux';
 
 import HomePage from '@/pages/home';
 import NotFoundPage from '@/pages/notFound';
