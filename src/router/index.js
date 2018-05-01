@@ -8,6 +8,7 @@ import NavBar from '@/components/navBar';
 import HomePage from '@/pages/home';
 import ListPage from '@/pages/list';
 import DetailPage from '@/pages/detail';
+import AboutPage from '@/pages/about';
 
 import NotFoundPage from '@/pages/notFound';
 
@@ -24,6 +25,7 @@ export default class AppRouter extends Component {
             <Route exact path="/" component={HomePage}/>
             <Route exact path="/list" component={ListPage}/>
             <Route exact path="/detail" component={DetailPage}/>
+            <Route exact path="/about" component={AboutPage}/>
             <Route path="/404" component={NotFoundPage} />
             <Route render={() => <Redirect to="/404" />} />
           </Switch> 
