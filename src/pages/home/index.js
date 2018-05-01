@@ -11,7 +11,9 @@ class Container extends Component {
     // 从props中取出属性
 		const {
 			clickTest
-		} = this.props;
+    } = this.props;
+    
+    console.log(this.props);
 
 		return (
 			<div>
