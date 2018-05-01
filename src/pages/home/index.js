@@ -1,19 +1,23 @@
 /*!
- * Home UI
+ * Home Container
 */
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import Home from './home';
 
-class Home extends Component {
+class Container extends Component {
 	render() {
 		return (
 			<div>
-				<h3>Home page</h3>
+				<Home />
 			</div>
 		);
 	}
 	componentDidMount() {
-	  	console.log("Home渲染完毕！");
+	  	console.log("Here is Home page！");
 	}
 }
 
-export default Home
+export default connect(
+  null, null
+)(Container);
